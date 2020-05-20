@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "brofit\\": "vendor/brofit",
+      "brofit\\": "vendor/brofit/core",
       "app\\": "app"
     }
   },

@@ -20,7 +20,7 @@ class ComposerStaticInite620d78579737f1b36e9b642967a43e1
     public static $prefixDirsPsr4 = array (
         'brofit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/brofit',
+            0 => __DIR__ . '/..' . '/brofit/core',
         ),
         'app\\' => 
         array (
