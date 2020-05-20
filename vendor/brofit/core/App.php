@@ -13,6 +13,7 @@ class App
         $query = trim($_SERVER['REQUEST_URI'], '/');
         session_start();
         self::$app = Registry::getInstance();
+        new ErrorHandler();
     }
 
 
