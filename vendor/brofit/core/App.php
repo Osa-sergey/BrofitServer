@@ -14,6 +14,7 @@ class App
         session_start();
         self::$app = Registry::getInstance();
         new ErrorHandler();
+        Router::redirection($query);
     }
 
 

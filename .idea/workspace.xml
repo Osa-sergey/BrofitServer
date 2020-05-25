@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a53f877e-41d9-452b-8cee-af4eece4df99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/ErrorHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/brofit/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/App.php" afterDir="false" />
@@ -59,7 +62,9 @@
       <workItem from="1589792390048" duration="2015000" />
       <workItem from="1589794704637" duration="4999000" />
       <workItem from="1589972491155" duration="1420000" />
-      <workItem from="1589974086568" duration="7810000" />
+      <workItem from="1589974086568" duration="15606000" />
+      <workItem from="1590097806405" duration="727000" />
+      <workItem from="1590387049763" duration="4117000" />
     </task>
     <task id="LOCAL-00001" summary="- Создал функцию для красивого отображения массивов данных&#10;- Создал класс приложения, где выдели тело запроса &#10;- Создал класс реестра(синглтон) для хранения настроек&#10;- Создал трейт синглтон&#10;- Изменил конфигураци автолоада &#10;- Добавил gitignore &#10;/// Так же &#10;- Создана переадресация запросов">
       <created>1589977628613</created>
@@ -68,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589977628613</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Создан и добавлен класс обработки ошибок">
+      <created>1589993851110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589993851110</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Создал функцию для красивого отображения массивов данных&#10;- Создал класс приложения, где выдели тело запроса &#10;- Создал класс реестра(синглтон) для хранения настроек&#10;- Создал трейт синглтон&#10;- Изменил конфигураци автолоада &#10;- Добавил gitignore &#10;/// Так же &#10;- Создана переадресация запросов" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Создал функцию для красивого отображения массивов данных&#10;- Создал класс приложения, где выдели тело запроса &#10;- Создал класс реестра(синглтон) для хранения настроек&#10;- Создал трейт синглтон&#10;- Изменил конфигураци автолоада &#10;- Добавил gitignore &#10;/// Так же &#10;- Создана переадресация запросов" />
+    <MESSAGE value="- Создан и добавлен класс обработки ошибок" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Создан и добавлен класс обработки ошибок" />
   </component>
 </project>
