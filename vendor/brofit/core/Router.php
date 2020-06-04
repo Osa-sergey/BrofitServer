@@ -11,11 +11,12 @@ class Router
     private static $routes = [];
     private static $curRoute = [];
 
-    public static function add($regExp){
-        self::$routes[$regExp] = 1;
+    public static function add($regExp, $route = []){
+        self::$routes[$regExp] = $route;
     }
 
     public static function redirection($url){
+        $url = self::removeGetParam($url);
         if(self::matchRoute($url)){
            $controller = 'app\controllers\\' . self::$curRoute['controller']."Controller";
            if(class_exists($controller)){
@@ -51,6 +52,17 @@ class Router
     }
     private static function uCamelCase($str){
         return str_replace(' ','',ucwords(str_replace('-',' ',$str)));
+    }
+
+    private static function removeGetParam($url){
+        if($url){
+            $params = explode('&',$url,2);
+            if (false === strpos($params[0],'=')){
+                return rtrim($params[0],'/');
+            }else{
+                return '';
+            }
+        }
     }
     // TODO удалить
     public static  function getRoutes(){

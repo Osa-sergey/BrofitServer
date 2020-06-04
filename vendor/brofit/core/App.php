@@ -10,7 +10,7 @@ class App
 
     public function __construct()
     {
-        $query = trim($_SERVER['REQUEST_URI'], '/');
+        $query = trim($_SERVER['QUERY_STRING'], '/');
         session_start();
         self::$app = Registry::getInstance();
         new ErrorHandler();
