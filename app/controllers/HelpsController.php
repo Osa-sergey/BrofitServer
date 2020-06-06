@@ -15,7 +15,7 @@ class HelpsController extends AppController
         if($helps != false){
             return $helps;
         }
-        $helps = $this->model->getAllHelps();
+        $helps = $this->getModel()->getAllHelps();
         $cache->set('helps',$helps);
         echo $helps;
     }

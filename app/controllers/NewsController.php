@@ -20,7 +20,7 @@ class NewsController extends AppController
         if($news != false){
             return $news;
         }
-        $news = $this->model->getAllNews();
+        $news = $this->getModel()->getAllNews();
         $cache->set('news',$news);
         echo $news;
     }
@@ -30,7 +30,7 @@ class NewsController extends AppController
             $params = explode('&',$this->route['getParams']);
             if(count($params) == 1){
                 $params[0] = substr($params[0],5);
-                echo $this->model->getNewsAfterDate($params);
+                echo $this->getModel()->getNewsAfterDate($params);
                 return;
             }
             $this->dropExceptionIfMoreParams();

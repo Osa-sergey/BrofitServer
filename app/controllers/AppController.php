@@ -10,14 +10,14 @@ use Exception;
 
 class AppController extends Controller
 {
-    public $model;
+    private $model;
 
-    public function __construct($route)
-    {
-        parent::__construct($route);
-        new Model();
-        $modelName = 'app\models\\' . $this->route['controller']."Model";
-        $this->model = new $modelName();
+    public function getModel(){
+        if($this->model === null){
+            $model = 'app\models\\' . $this->route['controller']."Model";
+            $this->model = new $model();
+        }
+        return $this->model;
     }
 
     public function dropExceptionIfExistParams(){
