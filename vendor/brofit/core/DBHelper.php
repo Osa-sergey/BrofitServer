@@ -4,7 +4,7 @@
 namespace brofit;
 
 
-use mysql_xdevapi\Exception;
+use Exception;
 use RedBeanPHP\R;
 
 class DBHelper

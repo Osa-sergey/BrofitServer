@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a53f877e-41d9-452b-8cee-af4eece4df99" name="Default Changelist" comment="">
+    <list default="true" id="a53f877e-41d9-452b-8cee-af4eece4df99" name="Default Changelist" comment="- Создан класс маршрутизации &#10;- Добавлены логи в gitignore">
+      <change afterPath="$PROJECT_DIR$/app/controllers/AppController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/HelpsController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/HelpsModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/NewsModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/conf_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/Cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/base/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/base/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/brofit/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/DBHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/DBHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/Registry.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +42,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\OSPanel\domains\brofit.loc\root" />
       <recent name="D:\OpenServer\OSPanel\domains\brofit\vendor\brofit\core" />
     </key>
   </component>
@@ -64,7 +77,15 @@
       <workItem from="1589972491155" duration="1420000" />
       <workItem from="1589974086568" duration="15606000" />
       <workItem from="1590097806405" duration="727000" />
-      <workItem from="1590387049763" duration="4117000" />
+      <workItem from="1590387049763" duration="6885000" />
+      <workItem from="1590498651213" duration="64000" />
+      <workItem from="1590669892608" duration="2112000" />
+      <workItem from="1590760558977" duration="622000" />
+      <workItem from="1591016346644" duration="9732000" />
+      <workItem from="1591198118334" duration="9947000" />
+      <workItem from="1591221344157" duration="78000" />
+      <workItem from="1591279150602" duration="5389000" />
+      <workItem from="1591284673230" duration="29196000" />
     </task>
     <task id="LOCAL-00001" summary="- Создал функцию для красивого отображения массивов данных&#10;- Создал класс приложения, где выдели тело запроса &#10;- Создал класс реестра(синглтон) для хранения настроек&#10;- Создал трейт синглтон&#10;- Изменил конфигураци автолоада &#10;- Добавил gitignore &#10;/// Так же &#10;- Создана переадресация запросов">
       <created>1589977628613</created>
@@ -80,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589993851110</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Создан класс маршрутизации &#10;- Добавлены логи в gitignore">
+      <created>1590391475525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590391475526</updated>
+    </task>
+    <task id="LOCAL-00004" summary="-Теперь экшон обязателен &#10;-Исправлен htaccess и то, что мы достаем в App (нормально заработали get параметры)&#10;-Переписан Utils&#10;-Создан класс для DB&#10;-Добавлен RedBeans&#10;-Исправлена запись маршрутов и добавлена функция обрезания get параметров">
+      <created>1591287484017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591287484018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +137,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Создал функцию для красивого отображения массивов данных&#10;- Создал класс приложения, где выдели тело запроса &#10;- Создал класс реестра(синглтон) для хранения настроек&#10;- Создал трейт синглтон&#10;- Изменил конфигураци автолоада &#10;- Добавил gitignore &#10;/// Так же &#10;- Создана переадресация запросов" />
     <MESSAGE value="- Создан и добавлен класс обработки ошибок" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Создан и добавлен класс обработки ошибок" />
+    <MESSAGE value="- Создан класс маршрутизации &#10;- Добавлены логи в gitignore" />
+    <MESSAGE value="-Теперь экшон обязателен &#10;-Исправлен htaccess и то, что мы достаем в App (нормально заработали get параметры)&#10;-Переписан Utils&#10;-Создан класс для DB&#10;-Добавлен RedBeans&#10;-Исправлена запись маршрутов и добавлена функция обрезания get параметров" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Теперь экшон обязателен &#10;-Исправлен htaccess и то, что мы достаем в App (нормально заработали get параметры)&#10;-Переписан Utils&#10;-Создан класс для DB&#10;-Добавлен RedBeans&#10;-Исправлена запись маршрутов и добавлена функция обрезания get параметров" />
   </component>
 </project>
