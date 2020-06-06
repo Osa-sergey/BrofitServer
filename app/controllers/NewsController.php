@@ -30,6 +30,7 @@ class NewsController extends AppController
             $params = explode('&',$this->route['getParams']);
             if(count($params) == 1){
                 $params[0] = substr($params[0],5);
+                $params[0] = preg_replace('~%20~',' ',$params[0]);
                 echo $this->getModel()->getNewsAfterDate($params);
                 return;
             }

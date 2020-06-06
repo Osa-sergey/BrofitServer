@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a53f877e-41d9-452b-8cee-af4eece4df99" name="Default Changelist" comment="- Создан класс маршрутизации &#10;- Добавлены логи в gitignore">
-      <change afterPath="$PROJECT_DIR$/app/controllers/AppController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/HelpsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/HelpsModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/NewsModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/conf_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/Cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/base/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/brofit/core/base/Model.php" afterDir="false" />
+    <list default="true" id="a53f877e-41d9-452b-8cee-af4eece4df99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/ContactsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/ContactsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/DBHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/DBHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/Registry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/brofit/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/brofit/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +71,7 @@
       <workItem from="1591198118334" duration="9947000" />
       <workItem from="1591221344157" duration="78000" />
       <workItem from="1591279150602" duration="5389000" />
-      <workItem from="1591284673230" duration="29196000" />
+      <workItem from="1591284673230" duration="35363000" />
     </task>
     <task id="LOCAL-00001" summary="- Создал функцию для красивого отображения массивов данных&#10;- Создал класс приложения, где выдели тело запроса &#10;- Создал класс реестра(синглтон) для хранения настроек&#10;- Создал трейт синглтон&#10;- Изменил конфигураци автолоада &#10;- Добавил gitignore &#10;/// Так же &#10;- Создана переадресация запросов">
       <created>1589977628613</created>
@@ -115,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591287484018</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-Создан класс AppController с вызовом нужной модели и обработкой ошибок параметров&#10;-Созданы классы моделей и контроллеров для новостей и помощи &#10;-Добавлен файл настроект подключения к DB &#10;-Унифицирован маршрут &#10;-Созданы базовые классы контроллера и модели&#10;-Удалён класс регистр за ненадобностью&#10;-Создан класс Кэш и закеширована часть запросов &#10;-Оптимизирован класс Роутера и добавлены get параметры">
+      <created>1591448174908</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591448174908</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-Переработан класс AppController. Теперь обращение к бд происходит только тогда, когда это нужно. Поле модели синглтон&#10;-Добавлен класс AppModel, чтобы потом в нем обрабатывать ошибки SQL. Теперь все *Model должны наследоваться от AppModel &#10;-Добавлены catch для SQL запросов, пока пустые">
+      <created>1591453252417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591453252417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +139,8 @@
     <MESSAGE value="- Создан и добавлен класс обработки ошибок" />
     <MESSAGE value="- Создан класс маршрутизации &#10;- Добавлены логи в gitignore" />
     <MESSAGE value="-Теперь экшон обязателен &#10;-Исправлен htaccess и то, что мы достаем в App (нормально заработали get параметры)&#10;-Переписан Utils&#10;-Создан класс для DB&#10;-Добавлен RedBeans&#10;-Исправлена запись маршрутов и добавлена функция обрезания get параметров" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Теперь экшон обязателен &#10;-Исправлен htaccess и то, что мы достаем в App (нормально заработали get параметры)&#10;-Переписан Utils&#10;-Создан класс для DB&#10;-Добавлен RedBeans&#10;-Исправлена запись маршрутов и добавлена функция обрезания get параметров" />
+    <MESSAGE value="-Создан класс AppController с вызовом нужной модели и обработкой ошибок параметров&#10;-Созданы классы моделей и контроллеров для новостей и помощи &#10;-Добавлен файл настроект подключения к DB &#10;-Унифицирован маршрут &#10;-Созданы базовые классы контроллера и модели&#10;-Удалён класс регистр за ненадобностью&#10;-Создан класс Кэш и закеширована часть запросов &#10;-Оптимизирован класс Роутера и добавлены get параметры" />
+    <MESSAGE value="-Переработан класс AppController. Теперь обращение к бд происходит только тогда, когда это нужно. Поле модели синглтон&#10;-Добавлен класс AppModel, чтобы потом в нем обрабатывать ошибки SQL. Теперь все *Model должны наследоваться от AppModel &#10;-Добавлены catch для SQL запросов, пока пустые" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Переработан класс AppController. Теперь обращение к бд происходит только тогда, когда это нужно. Поле модели синглтон&#10;-Добавлен класс AppModel, чтобы потом в нем обрабатывать ошибки SQL. Теперь все *Model должны наследоваться от AppModel &#10;-Добавлены catch для SQL запросов, пока пустые" />
   </component>
 </project>
